@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Form</title>
+</head>
+<body>
+  <main>
+    <h1 id="title"> YouTube Channel Survey</h1>
+    <p id="description">Thank you for taking the time out to fill out this form! Your feedback is greatly appreciated!</p>
+    
+    <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+    <fieldset> 
+      <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your name" required/></label>
+      <label id="number-label" for="number">Age: <input id="number" type="number" min="8" max="100" placeholder="Enter your age" required/> </label>
+    </fieldset>
+    <fieldset>
+      <legend>Gender:</legend>
+      <label for="male"><input id="male" name="gender" type="radio"  class="gender" value="male" checked/>Male
+      </label>
+      <label for="female"><input id="female" name="gender" type="radio" class="gender" value="female"/>Female
+      </label>
+      <label for="other"><input id="other" name="gender"  class="gender" type="radio" value="other"/>Other
+      </label>
+    </fieldset>
+    <fieldset>
+      <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="Enter your email" required/></label>
+      <label for="residence">Country: <input id="residence"  placeholder="Enter your country of residence" required/></label>
+     </fieldset>
+     <fieldset>
+       <legend> Would you recommend this channel to a friend?</legend>
+       
+       <label for="definitely"><input id="definitely" name="option" 
+type="radio" class="recommend" value="definitely" checked/> Definitely </label>
+<label for="maybe"><input id="maybe" name="option" type="radio" class="recommend" value="maybe" /> Maybe </label>
+<label for="not_sure"><input id="not_sure" name="option" type="radio"
+class="recommend" value="not_sure"/> Not Sure </label> 
+       </fieldset>
+       <fieldset>
+         <legend>What do you like the best about our channel?</legend>
+         <select id="dropdown">
+        <option>(Choose one)</option>
+        <option>Gaming Videos</option>
+        <option>Meme Reactions</option>
+        <option>Podcasts</option>
+        <option>Vlogs</option>
+        <option>Challenges</options>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>What new content would you like to see on our channel?</legend>
+          <label for="streams"><input id="streams" type="checkbox" value="streams"/>Twitch Streams</label>
+          <label for="collabs"><input id="collabs" type="checkbox" value="collabs"/>Collabs with Other Creators </label> 
+          <label for="reactions"><input id="reactions" type="checkbox" value="reaction_content"/>More Reaction Content</label>
+        </fieldset>
+      <fieldset>
+       <legend>Any other suggestions?</legend>
+       <textarea></textarea>
+       </fieldset>
+       <label><input type="submit" id="submit" class="submit_button"></label>
+    </form>
+    </main>
+</body>
+</html>
